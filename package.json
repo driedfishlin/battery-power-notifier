@@ -1,0 +1,25 @@
+{
+	"name": "battery-power-notifier",
+	"version": "1.0.0",
+	"main": "index.ts",
+	"author": "driedfish <driedfishlin@gmail.com>",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"start:build": "tsc -w",
+		"start:run": "nodemon ./dist/index.js",
+		"start": "concurrently yarn:start:*",
+		"launch": "node ./dist/index.js"
+	},
+	"dependencies": {
+		"node-notifier": "^10.0.1",
+		"systeminformation": "^5.11.15"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.35",
+		"@types/node-notifier": "^8.0.2",
+		"concurrently": "^7.2.0",
+		"nodemon": "^2.0.16",
+		"typescript": "^4.6.4"
+	}
+}
